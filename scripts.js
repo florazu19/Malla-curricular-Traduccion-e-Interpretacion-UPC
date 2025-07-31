@@ -11,43 +11,43 @@ const cursos = {
     { id: "gramesp2", nombre: "Gramática del Español 2", requisitos: ["gramesp1"] },
     { id: "lengua2", nombre: "Lengua 2", requisitos: ["lengua1"] },
     { id: "interpersonales", nombre: "Taller de Relaciones Interpersonales", requisitos: ["liderazgo"] },
-    { id: "lenguaC1", nombre: "Lengua C1" }
+    { id: "frances1", nombre: "Francés 1" }
   ],
   "Ciclo 3": [
     { id: "contexto", nombre: "Contexto y Sentido en la Comunicación", requisitos: ["gramesp2", "lengua2"] },
     { id: "entornos", nombre: "Entornos Globales", requisitos: ["historia"] },
     { id: "ingles3", nombre: "Inglés TI 3", requisitos: ["ingles2"] },
     { id: "graming", nombre: "Gramática del Inglés", requisitos: ["ingles2"] },
-    { id: "lenguaC2", nombre: "Lengua C2", requisitos: ["lenguaC1"] }
+    { id: "frances2", nombre: "Francés 2", requisitos: ["frances1"] }
   ],
   "Ciclo 4": [
     { id: "ingles4", nombre: "Inglés TI 4", requisitos: ["ingles3"] },
     { id: "analisis", nombre: "Análisis Textual para la Traducción", requisitos: ["contexto"] },
     { id: "iniciacion", nombre: "Iniciación a la Traducción", requisitos: ["ingles3", "graming"] },
-    { id: "lenguaC3", nombre: "Lengua C3", requisitos: ["lenguaC2"] },
+    { id: "frances3", nombre: "Francés 3", requisitos: ["frances2"] },
     { id: "gramC", nombre: "Gramática de Lengua C" }
   ],
   "Ciclo 5": [
     { id: "ingles5", nombre: "Inglés TI 5", requisitos: ["ingles4"] },
     { id: "tradIng1", nombre: "Traducción Directa del Inglés 1", requisitos: ["ingles4", "iniciacion"] },
     { id: "estilistica", nombre: "Estilística Contrastiva", requisitos: ["analisis"] },
-    { id: "lenguaC4", nombre: "Lengua C4", requisitos: ["lenguaC3"] },
+    { id: "frances4", nombre: "Francés 4", requisitos: ["frances3"] },
     { id: "antro", nombre: "Antropología Cultural", requisitos: ["entornos"] }
   ],
   "Ciclo 6": [
     { id: "culturaIng", nombre: "Lengua y Cultura Inglesa", requisitos: ["ingles5", "antro"] },
     { id: "tradIng2", nombre: "Traducción Directa del Inglés 2", requisitos: ["tradIng1"] },
     { id: "writing", nombre: "Writing Techniques For Translators", requisitos: ["ingles5", "tradIng1"] },
-    { id: "lenguaC5", nombre: "Lengua C5", requisitos: ["lenguaC4"] },
-    { id: "tradC1", nombre: "Traducción Directa Lengua C1", requisitos: ["iniciacion", "lenguaC4"] },
+    { id: "frances5", nombre: "Francés 5", requisitos: ["frances4"] },
+    { id: "tradC1", nombre: "Traducción Directa del Francés 1", requisitos: ["iniciacion", "frances4"] },
     { id: "interpretacion", nombre: "Introducción a la Interpretación", requisitos: ["ingles5", "tradIng1"] }
   ],
   "Ciclo 7": [
     { id: "sp2en1", nombre: "Spanish-To-English Translation 1", requisitos: ["writing"] },
     { id: "traductologia", nombre: "Introducción a la Traductología", requisitos: ["analisis"] },
     { id: "esp", nombre: "Iniciación a la Traducción Especializada", requisitos: ["tradIng2"] },
-    { id: "culturaC", nombre: "Lengua y Cultura Lengua C", requisitos: ["lenguaC5", "antro"] },
-    { id: "tradC2", nombre: "Traducción Directa Lengua C2", requisitos: ["tradC1"] }
+    { id: "culturaC", nombre: "Lengua y Cultura Francés", requisitos: ["frances5", "antro"] },
+    { id: "tradC2", nombre: "Traducción Directa del Francés 2", requisitos: ["tradC1"] }
   ],
   "Ciclo 8": [
     { id: "intercultural", nombre: "Comunicación Intercultural", requisitos: ["antro"] },
