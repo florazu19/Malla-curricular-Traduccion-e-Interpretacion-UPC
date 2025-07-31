@@ -1,1 +1,85 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fdfaf6;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #d94d7d;
+}
+
+.grid {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 10px;
+}
+
+.semestre {
+  background: #fef5f1;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  min-width: 260px;
+}
+
+.semestre h3 {
+  text-align: center;
+  color: #c0376e;
+  margin-bottom: 15px;
+}
+
+.curso {
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+  border: 1px solid transparent;
+  font-size: 0.95rem;
+}
+
+/* Disponible */
+.disponible {
+  background-color: #fddde6;
+  color: #600030;
+}
+
+/* Aprobado */
+.aprobado {
+  background-color: #d2c3f0;
+  color: #4a2d7d;
+  text-decoration: line-through;
+  border: 1px dashed #9475cb;
+}
+
+/* Bloqueado */
+.bloqueado {
+  background-color: #eaeaea;
+  color: #999;
+  cursor: not-allowed;
+}
+
+/* Tooltip */
+.curso[data-tooltip]:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 105%;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #333;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 10;
+}
 
